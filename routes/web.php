@@ -113,6 +113,11 @@ Route::get('/', function(){
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 
+	// ----------------- CHECKOUT ---------------				
+	Route::get('check-out', [PageController::class, 'getCheckout'])->name('dathang');				
+	Route::post('check-out', [PageController::class, 'postCheckout'])->name('dathang');				
+
+
 
 
 
